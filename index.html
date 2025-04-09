@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Product preview component</title>
+</head>
+<body class="flex flex-col  w-full md:max-w-full h-screen justify-center items-center  bg-[hsl(30,38%,92%)]">
+
+    <!-- global container -->
+    <main class="w-[80%] md:max-w-[700px] h-[90%] md:h-[60%] shadow-xl flex flex-col md:flex-row bg-white rounded-xl">
+
+        <!-- image container -->
+         <div class="h-[45%] md:h-full w-full md:w-[50%] bg-[url('/images/image-product-mobile.jpg')] md:bg-[url('/images/image-product-desktop.jpg')] bg-cover bg-no-repeat rounded-tl-xl  md:rounded-tl-xl md:rounded-bl-xl">
+
+         </div>
+
+
+         <!-- description container -->
+
+         <div class="py-5 px-5 flex flex-col md:w-[50%] bg-white md:rounded-br-xl md:rounded-tr-xl">
+            <p class="text-[hsl(228,12%,48%)] font-montserrat tracking-wider font-medium">PERFUME</p>
+            <h1 class="text-4xl md:text-5xl font-fraunces font-extrabold mt-5"> Gabrielle Essence Eau De Parfum</h1>
+
+            <p class="description text-[hsl(228,12%,48%)] font-montserrat text-base font-medium mt-5"> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <div class="price-container w-full flex items-center my-4 space-x-4">
+                <span class="text-4xl font-fraunces font-bold text-[hsl(158,36%,37%)]">$149.99</span>
+                <span class="line-through text-[hsl(228,12%,48%)] font-montserrat align-middle leading-relaxed">$169.99</span>
+              </div>
+
+              <button class="bg-[hsl(158,36%,37%)] py-3 px-2 mt-8 font-montserrat rounded-lg text-white flex flex-row justify-center gap-3 cursor-pointer hover:bg-[hsl(158,36%,17%)] font-bold"><img src="./images/icon-cart.svg" alt="cart" class="w-5 h-6">Add to cart</button>
+              
+
+
+         </div>
+
+        
+
+    </main>
+    <footer class="flex justify-center my-5 mt-5">
+        <p class="text-center text-2xl font-bold">&copy; Frontend Mentors challenge</p>
+
+    </footer>
+</body>
+</html>
